@@ -40,7 +40,7 @@ def about(request):
     visitor_cookie_handler(request)
     context_dict['visits'] = request.session['visits']
     #return HttpResponse('Rango says here is the about page')
-    response =  render(request, 'rango/about.html', context_dict )
+    response = render(request, 'rango/about.html', context=context_dict )
     return response
 
 def show_category(request, category_name_slug):

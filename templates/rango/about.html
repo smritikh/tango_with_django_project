@@ -11,6 +11,6 @@
     <div>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of rango"/>
         <img src="{{MEDIA_URL}}cat.jpg" alt="Picture of cat"/>
-        <p>visits: 1</p>
+        <p>visits: {{ visits }}</p>
     </div>
 {% endblock %}
