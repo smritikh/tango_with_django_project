@@ -24,7 +24,8 @@ def index(request):
 
 def about(request):
     context_dict = {'yourname': "Smriti"}
-    return render(request, 'rango/about.html', context = context_dict )
+    return HttpResponse('Rango says here is about page')
+    #return render(request, 'rango/about.html', context = context_dict )
 
 def show_category(request, category_name_slug):
 
